@@ -20,18 +20,32 @@ public class Ejer1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-         ArrayList numAleatorio = new ArrayList();
-         System.out.println("Ingrese la longitud del arreglo");
-         Scanner longi = new Scanner(System.in);
-         int aux = longi.nextInt();
-         for(int i=1; i<= aux; i++){
-                int num = (int)(Math.random()*15+1);
-                numAleatorio.add(num);
-         }
-         System.out.println(numAleatorio);
+     ArrayList lista = null;
+     CrearLista(lista);
+     SumaArreglo(lista);
     }
     
+    public static void CrearLista(ArrayList aux){
+         for(int i=1; i<=9; i++){
+                int num = (int)(Math.random()*15+1);
+                aux.add(num);
+         }
+         System.out.println(aux);
+    }
+    
+    public static void SumaArreglo(ArrayList a){
+        for (int i=1; i>=9;i++){
+            for(int j=9; j>0;i--){
+               int c= (int) a.get(i);
+                int d=(int) a.get(j);
+            }
+            int c = 0;
+            int d = 0;
+            int suma = c+d;
+            System.out.println(suma);
+    }
+    }
 }
-
+//ARREGLAR EL NULL
     
    
